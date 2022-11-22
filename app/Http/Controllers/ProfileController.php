@@ -8,10 +8,6 @@ use App\Models\User;
 
 class ProfileController extends Controller
 {
-    /*public function show(User $user)
-    {
-        return view('profile.show', compact('user'));
-    }*/
 
     public function edit(User $user)
     {
@@ -44,6 +40,18 @@ class ProfileController extends Controller
             $user->save();
         }
  
+        return redirect()->route('profile:edit');
+    }
+
+    public function password(Request $request)
+    {
+        $this->validate($request,[
+            'current_password' => 'required|current_password',
+            'password' => 'required|confirmed|min:8',
+        ]);
+
+        $request->user()->update(['password' => bcrypt($request->password)]);
+
         return redirect()->route('profile:edit');
     }
 }

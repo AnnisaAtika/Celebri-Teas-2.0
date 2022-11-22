@@ -20,7 +20,7 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="{{route('profile:edit')}}">
-                                    {{ __('View Profile') }}
+                                    {{ __('Update Profile') }}
                             </a>
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();

@@ -49,3 +49,6 @@ Route::get('/users/edit',[App\Http\Controllers\ProfileController::class,'edit'])
 
 //update admin profile
 Route::post('/users/{user}/edit',[App\Http\Controllers\ProfileController::class,'update'])->name('profile:update')->middleware('auth');
+
+//password admin profile
+Route::put('/users/{user}/edit',[App\Http\Controllers\ProfileController::class,'password'])->name('profile:password')->middleware('auth');

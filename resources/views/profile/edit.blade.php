@@ -53,6 +53,35 @@
                 </div>
             </div>
         </form>
+
+        <form action="{{ route('profile:password', $user) }}" class="needs-validation" method="POST">
+            @csrf
+            @method('PUT')
+            <div class="row">
+                <div class="col-lg-4" style="margin:auto;">
+                    <div class="team-member" >
+                        <div class="form-group">   
+                            <input type="password" name="current_password" class="form-control" placeholder="Current Password" style="background-color:#FFF4F4; width:440px; text-align:center;" required>
+                        </div>
+
+                        <br>
+                        <div class="form-group">  
+                            <input type="password" name="password" class="form-control" placeholder="New Password" style="background-color:#FFF4F4; width:440px; text-align:center;" required> 
+                        </div> 
+
+                        <br>
+                        <div class="form-group">  
+                            <input type="password" name="password_confirmation" class="form-control" placeholder="Confirm New Password" style="background-color:#FFF4F4; width:440px; text-align:center;" required> 
+                        </div>
+                        <br><br>
+
+                        <div class="col-md-12 text-center">
+                            <button type="submit" class="btn btn-primary" style="width: 140px; margin: auto;  background-color: #C79C9C; border:none;">Update</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
 </section>
 @endsection
