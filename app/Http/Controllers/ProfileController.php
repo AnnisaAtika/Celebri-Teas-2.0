@@ -40,7 +40,7 @@ class ProfileController extends Controller
             $user->save();
         }
  
-        return redirect()->route('profile:edit');
+        return redirect()->route('profile:edit')->with('status', 'Data updated sucessfully!');
     }
 
     public function password(Request $request)
@@ -52,6 +52,6 @@ class ProfileController extends Controller
 
         $request->user()->update(['password' => bcrypt($request->password)]);
 
-        return redirect()->route('profile:edit');
+        return redirect()->route('profile:edit')->with('status', 'Password has been changed sucessfully!');
     }
 }

@@ -92,7 +92,7 @@ class CelebrityController extends Controller
         $celebrity->save();
 
         //return to index
-        return redirect()->route('celebrities:index');
+        return redirect()->route('celebrities:index')->with('status', 'New data created sucessfully!');
     }
 
     public function show(Celebrity $celebrity)
@@ -172,14 +172,13 @@ class CelebrityController extends Controller
         $celebrity->save();
 
         //return to index
-        return redirect()->route('celebrities:index');
+        return redirect()->route('celebrities:index')->with('status', 'Data updated sucessfully!');
     }
 
     public function delete(Celebrity $celebrity)
     {
         $celebrity->delete();
-        return redirect()->route('celebrities:index')->with('success', 'Data deleted successfully');
+        return redirect()->route('celebrities:index')->with('status', 'Data deleted successfully');
     }
 
-    
 }

@@ -4,7 +4,14 @@
 <div class="container">
     <div class="row-justify-content-center">
         <div class="col-md-14">
-            <br><br>
+        <br>
+            <div class="container mt-14">
+                @if(session('status'))
+                    <div class="alert alert-success">
+                        {{ session('status') }}
+                    </div>
+                @endif
+            </div>
             <div class = "card">
                 <div class = "card-header" >{{__('Celebrity Index') }}
                     <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search"
