@@ -20,7 +20,6 @@
             </form>
             <br><br>
         </div>
-
         <div class="row">
             @foreach($celebrities as $celebrity)
             <div class="col-lg-4 col-sm-6 mb-4">

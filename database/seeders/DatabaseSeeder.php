@@ -17,6 +17,5 @@ class DatabaseSeeder extends Seeder
     {
         Celebrity::factory()->count(2)->create();
 
-        //$this->call(AdminUserSeeder::class);
     }
 }

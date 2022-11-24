@@ -44,19 +44,10 @@
                             @foreach($celebrities as $celebrity)
                                 <tr> 
                                     <td class="text-uppercase"><b>{{ $celebrity->star }}</b></td>
-
-                                    <td>{{ $celebrity->title1 }}
-                                    </td>
-
-                                    <td>{{ $celebrity->title2 }}
-                                    </td>
-
-                                    <td>{{ $celebrity->title3 }}
-                                    </td>
-
-                                    <td>{{ $celebrity->title4 }}
-                                    </td>
-
+                                    <td>{{ $celebrity->title1 }}</td>
+                                    <td>{{ $celebrity->title2 }}</td>
+                                    <td>{{ $celebrity->title3 }}</td>
+                                    <td>{{ $celebrity->title4 }}</td>
                                     <td>
                                         <a class="btn btn-info" href="{{ route('celebrities:show', $celebrity) }}"><span class="fa fa-eye"></a>  
                                         <a class="btn btn-primary" href="{{ route('celebrities:edit', $celebrity) }}"><i class="fa fa-pencil"></i></a> 

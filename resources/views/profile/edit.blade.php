@@ -46,33 +46,27 @@
                             <div class="form-row">
                                 <label for="name_validation" style="float:left;">Phone</label>
                                 <input type="text" name="phone" class="form-control" placeholder="Phone" value="{{ auth()->user()->phone }}" style="background-color:#FFF4F4" required>
-                                
                             </div>
                             <br>
                             <div class="form-row">
                                 <button type="submit" class="btn btn-primary" style="width: 700px; margin: auto;  background-color: #C79C9C; border:none;">Update</button>
                             </div>
                         </form>
-                        
                         <hr>
-
                         <form action="{{ route('profile:password', $user) }}" class="needs-validation" method="POST">
                         @csrf
                         @method('PUT')
                             <div class="form-row">
                                 <label for="name_validation" style="float:left;">Current Password</label>
                                 <input type="password" name="current_password" class="form-control" placeholder="Current Password" style="background-color:#FFF4F4" required>
-                                
                             </div>
                             <div class="form-row">
                                 <label for="name_validation" style="float:left;">New Password</label>
                                 <input type="password" name="password" class="form-control" placeholder="New Password" style="background-color:#FFF4F4" required>
-                            
                             </div>
                             <div class="form-row">
                                 <label for="name_validation" style="float:left;">Confirm New Password</label>
                                 <input type="password" name="password_confirmation" class="form-control" placeholder="Confirm New Password" style="background-color:#FFF4F4" required>
-                            
                             </div>
                             <br>
                             <div class="form-row">

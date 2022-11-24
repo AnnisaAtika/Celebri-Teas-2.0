@@ -6,7 +6,6 @@
         <div class="col-md-12">
             <div class="card mx-auto">
                 <div class="card-header" style="background-color:#b8d1ae;">{{__('Add New Celebrity')}}</div>
-                
                 <div class="card-body">
                     <form action="{{route('celebrities:store')}}" method="POST" enctype="multipart/form-data">
                         @csrf
@@ -18,7 +17,6 @@
                                 <span class="text-danger">{{ $errors->first('star') }}</span>
                             @endif
                         </div>
-
                         <!--TITLE 1-->
                         <div class="form-group">
                             <label>Title 1</label>
@@ -27,7 +25,6 @@
                                 <span class="text-danger">{{ $errors->first('title1') }}</span>
                             @endif
                         </div>
-
                         <div class="form-group">
                             <label>Body 1</label>
                             <textarea type = "text" name = "body1" class="form-control" style="background-color:#FFF4F4;"></textarea>
@@ -35,7 +32,6 @@
                                 <span class="text-danger">{{ $errors->first('body1') }}</span>
                             @endif
                         </div>
-
                         <div class="form-group">
                             <label>Attachment 1</label>
                             <input type="file" name="attachment1" class="form-control" id="chooseFile" style="background-color:#FFF4F4; width:450px;">
@@ -43,7 +39,6 @@
                                 <span class="text-danger">{{ $errors->first('attachment1') }}</span>
                             @endif
                         </div>
-
                         <div class="form-group">
                             <label>Attachment 2</label>
                             <input type="file" name="attachment2" class="form-control" id="chooseFile" style="background-color:#FFF4F4; width:450px;">
@@ -51,7 +46,6 @@
                                 <span class="text-danger">{{ $errors->first('attachment2') }}</span>
                             @endif
                         </div>
-
                         <!--TITLE 2-->
                         <div class="form-group">
                             <label>Title 2</label>
@@ -60,7 +54,6 @@
                                 <span class="text-danger">{{ $errors->first('title2') }}</span>
                             @endif
                         </div>
-
                         <div class="form-group">
                             <label>Body 2</label>
                             <textarea type = "text" name = "body2" class="form-control" style="background-color:#FFF4F4;"></textarea>
@@ -68,7 +61,6 @@
                                 <span class="text-danger">{{ $errors->first('body2') }}</span>
                             @endif
                         </div>
-
                         <div class="form-group">
                             <label>Attachment 3</label>
                             <input type="file" name="attachment3" class="form-control" id="chooseFile" style="background-color:#FFF4F4; width:450px;">
@@ -76,7 +68,6 @@
                                 <span class="text-danger">{{ $errors->first('attachment3') }}</span>
                             @endif
                         </div>
-
                         <div class="form-group">
                             <label>Attachment 4</label>
                             <input type="file" name="attachment4" class="form-control" id="chooseFile" style="background-color:#FFF4F4; width:450px;">
@@ -84,7 +75,6 @@
                                 <span class="text-danger">{{ $errors->first('attachment4') }}</span>
                             @endif
                         </div>
-
                         <!--TITLE 3-->
                         <div class="form-group">
                             <label>Title 3</label>
@@ -93,7 +83,6 @@
                                 <span class="text-danger">{{ $errors->first('title3') }}</span>
                             @endif
                         </div>
-
                         <div class="form-group">
                             <label>Body 3</label>
                             <textarea type = "text" name = "body3" class="form-control" style="background-color:#FFF4F4;"></textarea>
@@ -101,7 +90,6 @@
                                 <span class="text-danger">{{ $errors->first('body3') }}</span>
                             @endif
                         </div>
-
                         <div class="form-group">
                             <label>Attachment 5</label>
                             <input type="file" name="attachment5" class="form-control" id="chooseFile" style="background-color:#FFF4F4; width:450px;">
@@ -109,7 +97,6 @@
                                 <span class="text-danger">{{ $errors->first('attachment5') }}</span>
                             @endif
                         </div>
-
                         <!--TITLE 4-->
                         <div class="form-group">
                             <label>Title 4</label>
@@ -118,7 +105,6 @@
                                 <span class="text-danger">{{ $errors->first('title4') }}</span>
                             @endif
                         </div>
-
                         <div class="form-group">
                             <label>Body 4</label>
                             <textarea type = "text" name = "body4" class="form-control" style="background-color:#FFF4F4;"></textarea>
@@ -126,7 +112,6 @@
                                 <span class="text-danger">{{ $errors->first('body4') }}</span>
                             @endif
                         </div>
-
                         <br>
                         <!--SAVE BUTTON-->
                         <div class="col-md-12 text-center">

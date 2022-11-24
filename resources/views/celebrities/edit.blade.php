@@ -17,7 +17,6 @@
                                 <span class="text-danger">{{ $errors->first('star') }}</span>
                             @endif
                         </div>
-
                         <!--TITLE 1-->
                         <div class="form-group">
                             <label>Title 1</label>
@@ -26,7 +25,6 @@
                                 <span class="text-danger">{{ $errors->first('title1') }}</span>
                             @endif
                         </div>
-
                         <div class="form-group">
                             <label>Body 1</label>
                             <textarea type = "text" name = "body1" class="form-control"  style="background-color:#FFF4F4;">{{ $celebrity->body1 }}</textarea>
@@ -34,7 +32,6 @@
                                 <span class="text-danger">{{ $errors->first('body1') }}</span>
                             @endif
                         </div>
-
                         <div class="form-group">
                             <label>Attachment 1</label>
                             <input type="file" name="attachment1" class="form-control" id="chooseFile" style="background-color:#FFF4F4; width:450px;">
@@ -44,7 +41,6 @@
                             <br>
                             Image : <img src="{{url('image/'.$celebrity->attachment1)}}" alt="" style="width: 150px; height:100px;"/>
                         </div>
-
                         <div class="form-group">
                         <br>
                             <label>Attachment 2</label>
@@ -55,7 +51,6 @@
                             <br>
                             Image : <img src="{{url('image/'.$celebrity->attachment2)}}" alt="" style="width: 150px; height:100px;"/>
                         </div>
-
                         <!--TITLE 2-->
                         <div class="form-group">
                             <br>
@@ -65,7 +60,6 @@
                                 <span class="text-danger">{{ $errors->first('title2') }}</span>
                             @endif
                         </div>
-
                         <div class="form-group">
                             <label>Body 2</label>
                             <textarea type = "text" name = "body2" class="form-control" style="background-color:#FFF4F4;">{{ $celebrity->body2 }}</textarea>
@@ -73,7 +67,6 @@
                                 <span class="text-danger">{{ $errors->first('body2') }}</span>
                             @endif
                         </div>
-
                         <div class="form-group">
                             <label>Attachment 3</label>
                             <input type="file" name="attachment3" class="form-control" id="chooseFile" style="background-color:#FFF4F4;width:450px;">
@@ -83,7 +76,6 @@
                             <br>
                             Image : <img src="{{url('image/'.$celebrity->attachment3)}}" alt="" style="width: 150px; height:100px;"/>
                         </div>
-
                         <div class="form-group">
                             <br>
                             <label>Attachment 4</label>
@@ -94,7 +86,6 @@
                             <br>
                             Image : <img src="{{url('image/'.$celebrity->attachment4)}}" alt="" style="width: 150px; height:100px;"/>
                         </div>
-
                         <!--TITLE 3-->
                         <div class="form-group">
                             <br>
@@ -104,7 +95,6 @@
                                 <span class="text-danger">{{ $errors->first('title3') }}</span>
                             @endif
                         </div>
-
                         <div class="form-group">
                             <label>Body 3</label>
                             <textarea type = "text" name = "body3" class="form-control"  style="background-color:#FFF4F4;">{{ $celebrity->body3 }}</textarea>
@@ -112,7 +102,6 @@
                                 <span class="text-danger">{{ $errors->first('body3') }}</span>
                             @endif
                         </div>
-
                         <div class="form-group">
                             <label>Attachment 5</label>
                             <input type="file" name="attachment5" class="form-control" id="chooseFile" style="background-color:#FFF4F4;width:450px;">
@@ -122,7 +111,6 @@
                             <br>
                             Image : <img src="{{url('image/'.$celebrity->attachment5)}}" alt="" style="width: 150px; height:100px;"/>
                         </div>
-
                         <!--TITLE 4-->
                         <div class="form-group">
                             <br>
@@ -132,7 +120,6 @@
                                 <span class="text-danger">{{ $errors->first('title4') }}</span>
                             @endif
                         </div>
-
                         <div class="form-group">
                             <label>Body 4</label>
                             <textarea type = "text" name = "body4" class="form-control" style="background-color:#FFF4F4;">{{ $celebrity->body4 }}</textarea>
@@ -140,9 +127,7 @@
                                 <span class="text-danger">{{ $errors->first('body4') }}</span>
                             @endif
                         </div>
-
                         <br>
-            
                         <!--SAVE BUTTON-->
                         <div class="col-md-12 text-center">
                             <button type="submit" class="btn btn-primary" style="width: 140px; margin: auto;  background-color: #C79C9C; border:none;">Update</button>
