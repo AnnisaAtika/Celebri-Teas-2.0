@@ -49,9 +49,9 @@
                                     <td>{{ $celebrity->title3 }}</td>
                                     <td>{{ $celebrity->title4 }}</td>
                                     <td>
-                                        <a class="btn btn-info" href="{{ route('celebrities:show', $celebrity) }}"><span class="fa fa-eye"></a>  
+                                        <a class="btn btn-info" href="{{ route('celebrities:show', $celebrity) }}"><i class="fa fa-eye"></i></a> 
                                         <a class="btn btn-primary" href="{{ route('celebrities:edit', $celebrity) }}"><i class="fa fa-pencil"></i></a> 
-                                        <a class="btn btn-danger" href="{{ route('celebrities:delete', $celebrity) }}" ><span class="fa fa-remove"></span></a>       
+                                        <a class="btn btn-danger" href="{{ route('celebrities:delete', $celebrity) }}"><i class="fa fa-remove"></i></a>       
                                     </td>
                                 </tr>   
                             @endforeach

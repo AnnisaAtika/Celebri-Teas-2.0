@@ -31,7 +31,15 @@ class CelebrityController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'star' => 'required',
+            'star' => 'required|max:20',
+            'title1' => 'max:30',
+            'body1' => 'max:255',
+            'title2' => 'max:30',
+            'body2' => 'max:255',
+            'title3' => 'max:30',
+            'body3' => 'max:300',
+            'title4' => 'max:30',
+            'body4' => 'max:500',
             'attachment1' => 'required|image|mimes:jpeg,jpg,png,gif,svg|max:2048',
             'attachment2' => 'image|mimes:jpeg,jpg,png,gif,svg|max:2048',
             'attachment3' => 'image|mimes:jpeg,jpg,png,gif,svg|max:2048',
@@ -110,7 +118,15 @@ class CelebrityController extends Controller
     {
 
         $validated = $request->validate([
-            
+            'star' => 'max:20',
+            'title1' => 'max:30',
+            'body1' => 'max:255',
+            'title2' => 'max:30',
+            'body2' => 'max:255',
+            'title3' => 'max:30',
+            'body3' => 'max:300',
+            'title4' => 'max:30',
+            'body4' => 'max:500',
             'attachment1' => 'image|mimes:jpeg,jpg,png,gif,svg|max:2048',
             'attachment2' => 'image|mimes:jpeg,jpg,png,gif,svg|max:2048',
             'attachment3' => 'image|mimes:jpeg,jpg,png,gif,svg|max:2048',

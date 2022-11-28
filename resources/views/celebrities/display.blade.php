@@ -22,6 +22,7 @@
             </div>
         </div>
         <div class="col-md-5">
+            <br><br>
             <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="600" height="600" src="{{url('image/'.$celebrity->attachment1)}}"  role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
         </div>
    </div>
@@ -30,8 +31,9 @@
 
     <div class="row">
         <div class="col-md-5">
-                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="600" height="600" src="{{url('image/'.$celebrity->attachment3)}}"  role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
-            </div>
+            <br><br>
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="600" height="600" src="{{url('image/'.$celebrity->attachment3)}}"  role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+        </div>
             <div class="col-md-7">
                 <div class="row">
                     <div class="col-sm-12">
